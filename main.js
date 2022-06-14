@@ -7,7 +7,7 @@ var player_object="";
 
 function player_update()
 {
-    fabric.image.fromURL("player.png", function(Img) {
+    fabric.Image.fromURL("player.png", function(Img) {  //made i capital here for image
     player_object = Img;
 
     player_object.scaleToWidth(150);
@@ -160,7 +160,7 @@ function left()
         player_update();
     }
 }
-function up()
+function right()  //rename from up to right
 {
     if(player_x <=850)
     {
